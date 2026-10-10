@@ -4,4 +4,28 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+  "cairosvg>=2.9.1",
+  "fancy-einsum>=0.0.3",
+  "ipykernel>=7.2.0",
+  "jupyter-client>=8.8.0",
+  "jupytext>=1.19.6",
+  "kaleido>=1.5.0",
+  "matplotlib>=3.10.8",
+  "numpy>=2.0.0",
+  "plotly>=7.1.0",
+  "pnglatex>=1.1",
+  "pynvim>=0.6.0",
+  "pyperclip>=1.11.0",
+  "pytest>=9.0.2",
+  "scikit-learn>=1.9.1",
+  "torch>=2.13.0",
+]
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+[tool.pyright]
+exclude = [".venv", "build", "dist", "**/__pycache__"]

@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+  "accelerate>=1.15.0",
   "cairosvg>=2.9.1",
   "fancy-einsum>=0.0.3",
   "ipykernel>=7.2.0",
@@ -12,6 +13,7 @@ dependencies = [
   "jupytext>=1.19.6",
   "kaleido>=1.5.0",
   "matplotlib>=3.10.8",
+  "nnsight>=0.8.1",
   "numpy>=2.0.0",
   "plotly>=7.1.0",
   "pnglatex>=1.1",

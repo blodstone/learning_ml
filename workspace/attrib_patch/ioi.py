@@ -1,6 +1,6 @@
 # %%
-import torch
 import nnsight
+import torch
 from nnsight import TransformersModel
 
 # %%
@@ -10,12 +10,6 @@ corrupted_prompt = (
 )
 model = TransformersModel("openai-community/gpt2", device_map="auto", dispatch=True)
 # %%
-correct_index = model.tokenizer(" John")["input_ids"][0]
-incorrect_index = model.tokenizer(" Mary")["input_ids"][0]
 
-print(correct_index)
-print(incorrect_index)
-# %%
-with torch.no_grad():
-    with model.trace() as tracer:
-        pass
+with torch.no_grad(), model.trace() as tracer:
+    pass

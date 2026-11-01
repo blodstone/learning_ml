@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
   "accelerate>=1.15.0",
   "cairosvg>=2.9.1",
+  "debugpy>=1.8.20",
   "fancy-einsum>=0.0.3",
   "ipykernel>=7.2.0",
   "jupyter-client>=8.8.0",
